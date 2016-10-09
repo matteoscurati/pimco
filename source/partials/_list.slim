@@ -1,0 +1,21 @@
+.list
+  .wrap
+    .grid
+      .grid__item.width-12-12.lap-7-12.desk-8-12
+        .list__items
+          - 5.times do
+            .flag--top.list__item
+              .flag__image
+                = image_tag('photo00.jpg')
+              .flag__body
+                .flag-article__body
+                  .flag-article__body__heading
+                    h1 = lorem.words 4
+                  .flag-article__body__subtitle
+                    h2 = lorem.words 6
+                .flag-article__body__text
+                  p = lorem.sentences 3
+      .grid__item.width-12-12.lap-5-12.desk-4-12
+        .list__items--second
+          .list__item
+            = lorem.sentence

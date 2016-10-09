@@ -1,0 +1,20 @@
+.list
+  +margin-top(2)
+
+.list__items
+  border-top: 1px solid $light-grey
+
+.list__items--second
+  +margin-top(2)
+  @extend .list__items
+
+  +at-breakpoint(lap)
+    +margin-top(0)
+
+.list__item
+  +margin-top(2)
+
+  &:hover
+
+    .flag__image
+      opacity: .7
