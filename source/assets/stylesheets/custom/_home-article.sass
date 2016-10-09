@@ -1,0 +1,38 @@
+.home-article
+  +margin-top(4)
+  +margin-bottom(2)
+
+.home-article__image
+  background-repeat: no-repeat
+  background-position: center center
+  background-color: $light-bg-color
+  background-size: cover
+  position: relative
+  +vertical-padding(15)
+  cursor: pointer
+  +margin-bottom(1)
+
+.home-article__image__body
+  +position(absolute, 0 0 0 0)
+  background-color: rgba(0, 0, 0, 0.4)
+
+.home-article__body
+  line-height: 1.2
+
+.home-article__body__meta
+  +font-size(zeta)
+  +padding-bottom(0.3)
+  color: $orange
+  text-transform: uppercase
+
+.home-article__body__heading
+  +heading-font-family
+  +font-size(beta)
+  +padding-bottom(0.3)
+  color: $black
+  text-transform: uppercase
+
+.home-article__body__subtitle
+  +font-size(epsilon)
+  +padding-bottom(0.8)
+  color: $grey
