@@ -2,8 +2,21 @@
   +margin-top(2)
   +margin-bottom(2)
 
+.home-article__items
+
+  &:hover
+
+    .home-article__image
+      opacity: .7
+
 .home-article__item
   +margin-bottom(4)
+
+  +at-breakpoint(lap)
+    +margin-bottom(0)
+
+  &:last-child
+    +margin-bottom(0)
 
 .home-article__image
   background-repeat: no-repeat
@@ -14,6 +27,7 @@
   +vertical-padding(15)
   cursor: pointer
   +margin-bottom(1)
+  transition: all 0.2s ease-in-out
 
   +at-breakpoint(lap)
     +margin-bottom(0)
