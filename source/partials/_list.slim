@@ -18,4 +18,9 @@
       .grid__item.width-12-12.lap-5-12.desk-4-12
         .list__items--second
           .list__item
-            = lorem.sentence
+            .info
+              .info__body
+                .info__body__image
+                  = image_tag('pimco_logo.svg')
+                .info__body__text
+                  p = lorem.paragraphs 3
