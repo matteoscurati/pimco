@@ -28,6 +28,21 @@
   +font-size(epsilon)
   color: $grey
 
+.article__image
+  +margin-top(2)
+
+.article__image__header
+  margin-left: auto
+  margin-right: auto
+  text-align: center
+  +font-size(smallprint)
+  +margin-bottom(1)
+
+.article__image__footer
+  +margin-top(1)
+  @extend .article__image__header
+  text-align: left
+
 hr.article__line
   margin-left: auto
   margin-right: auto
