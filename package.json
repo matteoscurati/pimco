@@ -6,12 +6,14 @@
   "license": "MIT",
   "browser": {
     "modernizr": "./source/assets/javascripts/vendor/modernizr.js",
-    "jQuery": "./node_modules/jquery/dist/jquery.js"
+    "jQuery": "./node_modules/jquery/dist/jquery.js",
+    "wow": "./node_modules/wow.js/dist/wow.js"
   },
   "browserify-shim": {
     "jQuery": "$",
     "modernizr": "Modernizr",
-    "three": "global:THREE"
+    "three": "global:THREE",
+    "wow": "wow"
   },
   "browserify": {
     "transform": [
@@ -54,6 +56,7 @@
   "dependencies": {
     "desandro-classie": "^1.0.1",
     "jquery": "^3.1.1",
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.12.1",
+    "wow.js": "^1.2.2"
   }
 }

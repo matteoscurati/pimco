@@ -2,10 +2,10 @@
   .home-article
     .grid
       = link_to("/articoli/#{article.slug}.html", class: "home-article__link") do
-        .grid__item.width-12-12.lap-7-12.desk-8-12.home-article__items
+        .grid__item.width-12-12.lap-7-12.desk-8-12.home-article__items.wow.fadeInLeft data-wow-delay="0.5s"
           .home-article__image style="background-image: url('/dist/images/#{article.cover_image}')"
             .home-article__image__body
-        .grid__item.width-12-12.lap-5-12.desk-4-12
+        .grid__item.width-12-12.lap-5-12.desk-4-12.wow.fadeIn data-wow-delay="0.7s"
           .home-article__body
             .home-article__body__meta
               h3 = article.date
