@@ -3,7 +3,8 @@
 - second_article = data.article.article[1]
 = partial "partials/c75", locals: { article: second_article }
 - other_articles = data.article.article[2..3]
-= partial "partials/c50", locals: { article:  other_articles }
+= partial "partials/c50", locals: { other_articles:  other_articles }
 /- 2.times do
   /= partial "partials/c33"
-= partial "partials/list"
+/= partial "partials/list"
+= partial "partials/prospetto"
