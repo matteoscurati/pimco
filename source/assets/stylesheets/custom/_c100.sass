@@ -1,13 +1,17 @@
 .c100
-  margin-top: 50px
+  margin-top: 110px
   background-repeat: no-repeat
   background-position: center center
   background-color: $light-bg-color
   background-size: cover
   position: relative
-  +vertical-padding(20)
+  +padding-bottom(20)
+  +padding-top(35)
   cursor: pointer
   +margin-bottom(4)
+
+  +at-breakpoint(lap)
+    +padding-top(20)
 
 .c100__body
   +position(absolute, 0 0 0 0)
@@ -25,14 +29,13 @@
   +at-breakpoint(lap)
     width: 80%
 
-  +at-breakpoint(desk)
-    width: 60%
-
 .c100__body__title
   text-transform: uppercase
   +heading-font-family
   +font-size(mega)
+  line-height: 1.2
 
 .c100__body__subtitle
   +body-font-family
-  +font-size(gamma)
+  +font-size(delta)
+  +padding-top(1.5)

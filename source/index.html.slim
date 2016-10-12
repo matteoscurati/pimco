@@ -1,4 +1,5 @@
-= partial "partials/c100"
+- first_article = data.article.article[0]
+= partial "partials/c100", locals: { article: first_article }
 = partial "partials/c75"
 - 2.times do
   = partial "partials/c50"

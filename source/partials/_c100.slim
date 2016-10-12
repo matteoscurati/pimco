@@ -1,10 +1,16 @@
-.c100 style="background-image: url('/dist/images/photo00.jpg')"
-  h1 ciao
-  .c100__body
-    .c100__body__inner
-      .wrap
-        .c100__body__heading
-          .c100__body__title
-            h1 = lorem.words 3
-          .c100__body__subtitle
-            h2 = lorem.words 4
+= link_to("/articoli/#{article.slug}.html") do
+  .c100 style="background-image: url('/dist/images/#{article.cover_image}')"
+    .c100__body
+      .c100__body__inner
+        .wrap
+          .c100__body__heading
+            .c100__body__title
+              h1 = article.title
+            .c100__body__subtitle
+              - if article.author
+                .flag
+                  .flag__image--home style="background: url('/dist/images/#{article.author_photo}') no-repeat center center; background-size: cover"
+                  .flag__body--home
+                    = article.author
+                    br
+                    = article.authore_profile
