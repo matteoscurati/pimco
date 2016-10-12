@@ -18,20 +18,10 @@
 
   h1, h2, h3, h4, h5, h6
     +heading-font-family
-    +margin-top(2)
+    +margin-top(1.5)
 
     &:first-child
       margin-top: 0
-
-  @for $i from 1 through 6
-    h#{$i}
-      $index: $i
-
-      @if $i > length($heading-font-sizes)
-        $index: length($heading-font-sizes)
-
-      $size: nth(map-values($heading-font-sizes), $index)
-      +rem-rule(font-size, $size)
 
   table
     width: 100%

@@ -4,6 +4,8 @@
   background-color: $light-bg-color
   background-size: cover
   position: relative
+  margin-top: 50px
+  +vertical-padding(18)
 
 .hero__body
   display: table
@@ -13,7 +15,8 @@
 .hero__body__inner
   display: table-cell
   vertical-align: middle
-  +vertical-padding(4)
+  +position(absolute, 0 0 0 0)
+  background-color: rgba(0, 0, 0, 0.4)
 
 .hero__heading
   +heading-font-family

@@ -1,0 +1,24 @@
+.wrap--on-lap
+  .hero style="background: url('/dist/images/#{article.cover_image}') no-repeat center center; background-size: cover"
+    .hero__body
+      .hero__body__inner
+.wrap.is-narrow
+  .article
+    .formatted-content
+      - if article.date
+        .article__meta = article.date
+      .article__heading
+        .article__heading__title
+          h1 = article.title
+      - if article.subtitle
+        h2 = article.subtitle
+      - if article.author
+        .article__author
+          .flag
+            .flag__image--article style="background: url('/dist/images/#{article.author_photo}') no-repeat center center; background-size: cover"
+            .flag__body--article
+              = article.author
+              br
+              = article.authore_profile
+      = article.content
+      hr.article__line
