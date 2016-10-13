@@ -2,8 +2,8 @@
   .home-article
     .grid
       - other_articles.each do |article|
-        = link_to("/articoli/#{article.slug}.html", class: "home-article__link") do
-          .grid__item.width-12-12.lap-6-12.home-article__items.home-article__item.wow.fadeIn
+        .grid__item.width-12-12.lap-6-12.home-article__items.home-article__item.wow.fadeIn
+          = link_to("/articoli/#{article.slug}.html", class: "home-article__link") do
             .home-article__image.is-no-100 style="background-image: url('/dist/images/#{article.cover_image}')"
               .home-article__image__body
             .home-article__body

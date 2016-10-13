@@ -8,6 +8,7 @@
   width: 100%
   border-bottom: 1px solid $light-grey
   z-index: 5
+  transition: all .2 ease-in-out
 
   img
     height: 55px
@@ -18,3 +19,21 @@
   &.is-smaller
     img
       height: 44px
+
+.logo--news
+  @extend .logo
+
+  img
+    max-width: 90%
+
+  &.is-smaller
+    img
+      max-width: 75%
+
+  +at-breakpoint(lap)
+    img
+      max-width: 100%
+
+    &.is-smaller
+      img
+        max-width: 90%

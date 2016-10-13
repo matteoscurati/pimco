@@ -14,7 +14,7 @@ function sizeOnScroll() {
   window.addEventListener('scroll', function(e){
     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
       shrinkOn = 300,
-      header = document.querySelector(".logo");
+      header = document.querySelector("#logo");
     if (distanceY > shrinkOn) {
       classie.add(header,"is-smaller");
     } else {
