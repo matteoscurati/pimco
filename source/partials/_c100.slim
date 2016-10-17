@@ -1,16 +1,17 @@
-= link_to("/articoli/#{article.slug}.html") do
+= link_to("/articoli/#{article.slug}.html", class: "home-article__link") do
   .c100 style="background-image: url('/dist/images/#{article.cover_image}')"
     .c100__body
       .c100__body__inner
-        .wrap
-          .c100__body__heading.wow.fadeIn data-wow-delay="0.3s"
-            .c100__body__title
-              h1 = article.title
-            .c100__body__subtitle
-              - if article.author
-                .flag
-                  .flag__image--home style="background: url('/dist/images/#{article.author_photo}') no-repeat center center; background-size: cover"
-                  .flag__body--home
-                    = article.author
-                    br
-                    = article.authore_profile
+  .wrap
+    .home-article--first.wow.fadeIn
+      .home-article__body
+        .home-article__body__meta
+          h3 = article.date
+        .home-article__body__heading
+          h1 = article.title
+        .home-article__body__subtitle
+          - if article.author
+            = article.author
+            br
+            = article.author_profile
+        = truncate_words(Sanitize.fragment(article.content), length: 20)
