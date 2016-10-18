@@ -1,0 +1,11 @@
+.home-article__body
+  .home-article__body__meta
+    h3 = article.date
+  .home-article__body__heading
+    h1 = article.title
+  .home-article__body__subtitle
+    - if article.author
+      = article.author
+      br
+      = article.author_profile
+  = truncate_words(Sanitize.fragment(article.content), length: 20)

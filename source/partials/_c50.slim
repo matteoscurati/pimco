@@ -6,14 +6,4 @@
           = link_to("/articoli/#{article.slug}.html", class: "home-article__link") do
             .home-article__image.is-no-100 style="background-image: url('/dist/images/#{article.cover_image}')"
               .home-article__image__body
-            .home-article__body
-              .home-article__body__meta
-                h3 = article.date
-              .home-article__body__heading
-                h1 = article.title
-              .home-article__body__subtitle
-                - if article.author
-                  = article.author
-                  br
-                  = article.author_profile
-              = truncate_words(Sanitize.fragment(article.content), length: 20)
+            = partial "partials/home-article", locals: { article: article }
