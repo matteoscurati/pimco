@@ -6,4 +6,6 @@
           = link_to("/articoli/#{article.slug}.html", class: "home-article__link") do
             .home-article__image.is-no-100 style="background-image: url('/dist/images/#{article.cover_image}')"
               .home-article__image__body
+                - if article.cover_image_credit
+                  p = article.cover_image_credit
             = partial "partials/home-article", locals: { article: article }
