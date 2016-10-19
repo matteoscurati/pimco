@@ -2,8 +2,6 @@
   .hero style="background: url('/dist/images/#{article.cover_image}') no-repeat center center; background-size: cover"
     .hero__body
       .hero__body__inner
-        - if article.cover_image_credit
-          p = article.cover_image_credit
 .wrap.is-narrow
   .article.wow.fadeInUpBig data-wow-delay="0.5s"
     .formatted-content
@@ -30,4 +28,9 @@
           img src="/dist/images/#{article.image}" alt=article.title tilte=article.title
           - if article.image_footer
               .article__image__footer = article.image_footer
+      - if article.cover_image_credit
+        .article__image__credit
+          p
+            | photo credit: 
+            = article.cover_image_credit
       hr.article__line
