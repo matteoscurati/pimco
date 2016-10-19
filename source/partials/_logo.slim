@@ -1,3 +1,7 @@
 .wrap
-  a.logo#logo href="/"
-    = image_tag "pimco_logo.svg"
+  - if current_page.url == "/"
+    a.logo#logo href="index.html"
+      = image_tag "pimco_logo.svg"
+  - else
+    a.logo#logo href="../index.html"
+      = image_tag "pimco_logo.svg"

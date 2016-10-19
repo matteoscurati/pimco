@@ -22,7 +22,7 @@
               = article.author
               br
               = article.authore_profile
-      = article.content
+      = entity(article.content)
       - if article.image
         .article__image
           - if article.image_header
