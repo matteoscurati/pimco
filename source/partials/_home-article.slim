@@ -5,7 +5,6 @@
     h1 = article.title
   .home-article__body__subtitle
     - if article.author
-      = article.author
-      br
-      = article.author_profile
+      - article.author.each do |aut|
+        = aut.author_name
   = entity(truncate_words(Sanitize.fragment(article.content), length: 20))

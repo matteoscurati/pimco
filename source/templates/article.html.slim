@@ -13,13 +13,14 @@
       - if article.subtitle
         h2 = article.subtitle
       - if article.author
-        .article__author
-          .flag
-            .flag__image--article style="background: url('/dist/images/#{article.author_photo}') no-repeat center center; background-size: cover"
-            .flag__body--article
-              = article.author
-              br
-              = article.authore_profile
+        - article.author.each do |aut|
+          .article__author
+            .flag
+              .flag__image--article style="background: url('/dist/images/#{aut.author_photo}') no-repeat center center; background-size: cover"
+              .flag__body--article
+                = aut.author
+                br
+                = aut.author_profile
       = entity(article.content)
       - if article.image
         .article__image
