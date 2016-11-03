@@ -11,7 +11,7 @@
         .article__heading__title
           h1 = article.title
       - if article.subtitle
-        h2 = article.subtitle
+        h2 = entity(article.subtitle)
       - if article.author
         - article.author.each do |aut|
           .article__author
