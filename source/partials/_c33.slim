@@ -1,15 +1,19 @@
 .wrap
   .home-article
     .grid
-      - 3.times do
+      - other_articles.each do |article|
         .grid__item.width-12-12.lap-4-12.home-article__items.home-article__item
-          .home-article__image.is-no-100 style="background-image: url('/dist/images/photo00.jpg')"
-            .home-article__image__body
-          .home-article__body
-            .home-article__body__meta
-              h3 = lorem.words 4
-            .home-article__body__heading
-              h1 = lorem.words 4
-            .home-article__body__subtitle
-              h2 = lorem.words 6
-          p = lorem.sentences 3
+          = link_to("/articoli/#{article.slug}.html", class: "home-article__link") do
+            .home-article__image.is-no-100 style="background-image: url('/dist/images/#{article.cover_image}')"
+              .home-article__image__body
+            = partial "partials/home-article", locals: { article: article }
+          /.home-article__image.is-no-100 style="background-image: url('/dist/images/photo00.jpg')"
+            /.home-article__image__body
+          /.home-article__body
+            /.home-article__body__meta
+              /h3 = lorem.words 4
+            /.home-article__body__heading
+              /h1 = lorem.words 4
+            /.home-article__body__subtitle
+              /h2 = lorem.words 6
+          /p = lorem.sentences 3

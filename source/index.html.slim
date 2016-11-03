@@ -4,8 +4,8 @@
 = partial "partials/c75", locals: { article: second_article }
 - other_articles = data.article.article[2..3]
 = partial "partials/c50", locals: { other_articles: other_articles }
-- other_articles = data.article.article[4..5]
-= partial "partials/c50", locals: { other_articles: other_articles }
+- other_articles = data.article.article[4..6]
+= partial "partials/c33", locals: { other_articles: other_articles }
 /- 2.times do
   /= partial "partials/c33"
 /= partial "partials/list"
