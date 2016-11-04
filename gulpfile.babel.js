@@ -156,7 +156,7 @@ const tasks = {
   zip: () => {
     return gulp.src( src + '/**/*' )
     .pipe(zip('archive.zip'))
-    .pipe(gulp.dest( dist + '/public/zip' ));
+    .pipe(gulp.dest( 'source/public/zip' ));
   }
 };
 
