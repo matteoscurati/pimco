@@ -26,6 +26,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const stylish = require('jshint-stylish');
 const uglify = require('gulp-uglify');
 const watchify = require('watchify');
+const zip = require('gulp-zip');
 
 const production = !!argv.production;
 
@@ -151,6 +152,11 @@ const tasks = {
       optimizationLevel: production ? 3 : 1
     }))
     .pipe(gulp.dest( dist + '/images'));
+  },
+  zip: () => {
+    return gulp.src( src + '/**/*' )
+    .pipe(zip('archive.zip'))
+    .pipe(gulp.dest( dist + '/public/zip' ));
   }
 };
 
@@ -189,6 +195,7 @@ gulp.task('iconfont', tasks.iconfont);
 gulp.task('browserify', tasks.browserify);
 gulp.task('lint:js', tasks.lintjs);
 gulp.task('optimize', tasks.optimize);
+gulp.task('zip', tasks.zip);
 
 gulp.task('watch',
   gulpsync.sync([
@@ -219,6 +226,7 @@ gulp.task('build',
     ['iconfont'],
     ['fonts', 'images'],
     'sass',
-    'browserify'
+    'browserify',
+    'zip'
   ])
 )
