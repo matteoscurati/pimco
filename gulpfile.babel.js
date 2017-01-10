@@ -102,7 +102,7 @@ const tasks = {
       .pipe(gulp.dest( dist + '/fonts'));
   },
   browserify: () => {
-    var bundler = browserify( src + '/javascripts/application.js.es6', {
+    var bundler = browserify( src + '/javascripts/application.js', {
       debug: !production,
       cache: {}
     });
@@ -133,7 +133,7 @@ const tasks = {
   lintjs: () => {
     return gulp.src([
         'gulpfile.js',
-        src + '/javascripts/application.js.es6',
+        src + '/javascripts/application.js',
         src + '/javascripts/**/*.js',
         src + '/javascripts/**/*.es6'
       ]).pipe(jshint({
