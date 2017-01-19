@@ -6,16 +6,15 @@
 = partial "partials/c75", locals: { article: third_article }
 - third_article = data.article.article[3]
 = partial "partials/c75", locals: { article: third_article }
-- other_articles = data.article.article[4..5]
-= partial "partials/c50", locals: { other_articles: other_articles }
-- other_articles = data.article.article[6..8]
+- other_articles = data.article.article[4..6]
 = partial "partials/c33", locals: { other_articles: other_articles }
-- other_articles = data.article.article[9..11]
+- other_articles = data.article.article[7..9]
 = partial "partials/c33", locals: { other_articles: other_articles }
-- other_articles = data.article.article[12..14]
+- other_articles = data.article.article[10..12]
+= partial "partials/c33", locals: { other_articles: other_articles }
+- other_articles = data.article.article[13..15]
 = partial "partials/c33", locals: { other_articles: other_articles }
 /- 2.times do
   /= partial "partials/c33"
 /= partial "partials/list"
 = partial "partials/prospetto"
-= data.article.article.count
