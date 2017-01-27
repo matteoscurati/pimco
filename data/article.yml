@@ -1,5 +1,23 @@
 ---
 article:
+  - title: "La strategia Income di PIMCO: posizionamento attivo in un contesto incerto e volatile"
+    cover_image: "income.jpg"
+    slug: "strategia-income"
+    date: "30 gennaio 2017"
+    content: "<p>Dall'elezione di Donald Trump alla presidenza degli Stati Uniti, i mercati hanno manifestano una generale propensione al rischio. Eppure il futuro della politica fiscale e monetaria &egrave; estremamente incerto e la volatilit&agrave; elevata. Come illustrato dai gestori Dan Ivascyn e Alfred Murata in questa intervista, la strategia Income di PIMCO adotta un approccio flessibile con l'obiettivo di offrire un reddito costante e un valore patrimoniale netto (NAV) stabile a fronte di una crescita economica superiore o inferiore alle attese.</p>
+<br>
+<p><strong>D: Qual &egrave; stato l'impatto delle elezioni sulle prospettive dei mercati e delle economie?</strong></p>
+<p>Daniel Ivascyn:&nbsp;Il quadro dei possibili scenari economici &egrave; complesso e il rischio di scenari estremi, sia negativi che positivi, &egrave; aumentato. Le politiche favorevoli alla crescita negli USA, fra cui l'aumento della spesa per infrastrutture e le agevolazioni fiscali, potrebbero sostenere gli attivi pi&ugrave; rischiosi. Tuttavia un inasprimento delle politiche commerciali potrebbe compromettere la politica estera, facendo bruscamente salire l'avversione al rischio. La vittoria di Trump sottolinea inoltre l'ascesa del populismo, che pu&ograve; accrescere la volatilit&agrave; nel 2017.</p>
+<p>L'economia globale dovr&agrave; affrontare tre difficili transizioni: il passaggio dalla politica monetaria alla politica fiscale nei paesi avanzati; la transizione dalla globalizzazione alla deglobalizzazione, che potrebbe porre un freno alla produttivit&agrave; e alimentare l'inflazione; l'evoluzione del regime valutario in Cina da un regime valutario fisso a potenzialmente un sistema di cambi a fluttuazione controllata o addirittura libera.</p>
+<p>Riteniamo che questo contesto favorisca le strategie attive. Nei prossimi mesi, in un mercato probabilmente volatile, sar&agrave; fondamentale attuare una rigorosa gestione del rischio, garantendo al portafoglio sufficiente liquidit&agrave; e flessibilit&agrave;.</p>
+<p><strong>Per saperne di pi&ugrave; ti invitiamo a leggere l&rsquo;approfondimento sulla strategia Income di PIMCO <a href=\"https://www.pimco.it/insights/investment-strategies/strategy-spotlight/income-strategy-update-active-positioning-for-a-volatile-and-uncertain-environment\" target=\"_blank\">Clicca qui.</a></strong></strong></p>"
+    author:
+      - author_name: "Dan Ivascyn"
+        author_profile: "Group Chief Investment Officer Portfolio Manager"
+        author_photo: "ivascyn.jpg"
+      - author_name: "Alfred Murata"
+        author_profile: "Managing Director Portfolio Manager"
+        author_photo: "murata.jpg"
   - title: "Affrontare il cambiamento: opportunit&agrave; nelle obbligazioni creditizie di elevata qualit&agrave;, nella finanza specializzata e nei titoli ipotecari"
     cover_image: "affrontare-cambiamento.jpg"
     slug: "affrontare-cambiamento"
@@ -14,7 +32,7 @@ article:
 <p>&Egrave; interessante notare che i mercati azionari e obbligazionari sembrano scontare per lo pi&ugrave; sviluppi estremi favorevoli, ossia scenari positivi, ignorando invece molti dei rischi estremi sfavorevoli, o scenari negativi. Mentre il mercato incorpora in misura crescente evoluzioni positive, stiamo ampiamente riducendo il profilo di rischio dei portafogli in tutti i mercati del credito, soprattutto alla luce della recente brillante performance post-elettorale messa a segno da azioni, obbligazioni societarie investment grade, titoli high yield, prestiti bancari e obbligazioni corporate dei mercati emergenti.</p>
 <p>Pur continuando a ravvisare opportunit&agrave; selezionate nei mercati del credito (in particolare nelle obbligazioni di qualit&agrave; superiore e nei mutui ipotecari agency e non-agency), crediamo che sia sensato per gli investitori aumentare le riserve di liquidit&agrave; e investire in titoli dal profilo qualitativo pi&ugrave; elevato.<br>
 I rischi estremi negativi stanno aumentando, e con essi la possibilit&agrave; che l'economia statunitense si surriscaldi in seguito all'implementazione delle politiche di Trump, inducendo la Federal Reserve ad alzare pi&ugrave; aggressivamente i tassi nel 2017. In parole semplici, le probabilit&agrave; di recessione negli Stati Uniti sono moderatamente incrementate nel nostro orizzonte ciclico e le valutazioni in molte aree del mercato del credito hanno perso attrattiva. Si veda il nostro Cyclical Outlook, &quot;Verso l'ignoto&quot;, per ulteriori dettagli sulle nostre previsioni per i mercati e le economie globali per il 2017.</p>
-<p>Per saperne di pi&ugrave; ti invitiamo a leggere le prospettive sul credito globale di PIMCO. <a href=\"https://www.pimco.it/insights/investment-strategies/global-credit-perspectives/navigating-change-opportunities-in-quality-credit-specialty-finance-and-mortgages\" target=\"_blank\">Clicca qui.</a></p>"
+<p><strong>Per saperne di pi&ugrave; ti invitiamo a leggere le prospettive sul credito globale di PIMCO. <a href=\"https://www.pimco.it/insights/investment-strategies/global-credit-perspectives/navigating-change-opportunities-in-quality-credit-specialty-finance-and-mortgages\" target=\"_blank\">Clicca qui.</a></strong></p>"
     author:
       - author_name: "Mark Kiesel"
         author_profile: ""
