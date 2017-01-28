@@ -50,7 +50,7 @@ const dist = 'source/dist';
 
 const tasks = {
   clean: (callback) => {
-    del([ dist, 'temp/' ]).then(() => {
+    del([ 'dist', 'temp/', 'urls.txt' ]).then(() => {
       callback();
     });
   },
@@ -144,6 +144,9 @@ const tasks = {
         beep();
       });
   },
+  readImages: () => {
+    return gulp.src('urls.txt');
+  },
   optimize: () => {
     return gulp.src( src + '/images/**/*.{gif,jpg,png,svg}')
     .pipe(imagemin({
@@ -152,11 +155,6 @@ const tasks = {
       optimizationLevel: production ? 3 : 1
     }))
     .pipe(gulp.dest( dist + '/images'));
-  },
-  zip: () => {
-    return gulp.src( src + '/**/*' )
-    .pipe(zip('archive.zip'))
-    .pipe(gulp.dest( 'source/public/zip' ));
   }
 };
 
@@ -195,7 +193,7 @@ gulp.task('iconfont', tasks.iconfont);
 gulp.task('browserify', tasks.browserify);
 gulp.task('lint:js', tasks.lintjs);
 gulp.task('optimize', tasks.optimize);
-gulp.task('zip', tasks.zip);
+gulp.task('readImages', tasks.readImages);
 
 gulp.task('watch',
   gulpsync.sync([
@@ -203,7 +201,7 @@ gulp.task('watch',
     'browser-sync',
     ['iconfont'],
     ['fonts', 'images'],
-    ['sass', 'browserify'],
+    ['sass', 'browserify']
   ]), () => {
     gulp.watch( src + '/stylesheets/**/*.{sass,scss}', ['reload-sass']);
     gulp.watch( src + '/javascripts/**/*.{js,es6}', ['lint:js']);
@@ -227,6 +225,6 @@ gulp.task('build',
     ['fonts', 'images'],
     'sass',
     'browserify',
-    'zip'
+    'readImages'
   ])
 )

@@ -23,3 +23,4 @@ temp/
 .tmp/
 node_modules/
 npm-debug.log
+urls.txt

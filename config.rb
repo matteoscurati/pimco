@@ -44,6 +44,7 @@ configure :build do
   activate :minify_html, remove_intertag_spaces: true
   activate :asset_hash
   activate :relative_assets
+  activate :zip
 end
 
 TRANSFORMS = [
@@ -73,5 +74,12 @@ helpers do
 
   def entity(text)
     TRANSFORMS.each.with_object(text) { |(from, to), t| t = t.gsub!(from, to) }
+  end
+
+  def download_image(url)
+    html = Nokogiri::HTML(url)
+    string = html.css("img").attribute('src').to_s
+    File.open("urls.txt", 'a') { |file| file.puts string }
+    ## devo trasformare
   end
 end

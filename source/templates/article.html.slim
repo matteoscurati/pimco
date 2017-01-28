@@ -26,7 +26,7 @@
         .article__image
           - if article.image_header
             .article__image__header = article.image_header
-          img src="/dist/images/#{article.image}" alt=article.title tilte=article.title
+          = download_image(image_tag("/dist/images/#{article.image}"))
           - if article.image_footer
               .article__image__footer = article.image_footer
       - if article.cover_image_credit
