@@ -115,6 +115,7 @@ PLATFORMS
 DEPENDENCIES
   middleman (>= 4.0.0)
   middleman-minify-html
+  nokogiri
   sanitize
   slim
 
