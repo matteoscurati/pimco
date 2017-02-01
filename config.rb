@@ -76,6 +76,6 @@ helpers do
   end
 
   def download_image(url)
-    File.open("build/urls.txt", 'a') { |file| file.puts string }
+    File.open("build/urls.txt", 'a') { |file| file.puts url }
   end
 end
