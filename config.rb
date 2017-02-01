@@ -78,6 +78,6 @@ helpers do
   def download_image(url)
     html = Nokogiri::HTML(url)
     string = html.css("img").attribute('src').to_s
-    File.open("urls.txt", 'a') { |file| file.puts string }
+    File.open("build/urls.txt", 'a') { |file| file.puts string }
   end
 end
