@@ -1,7 +1,7 @@
 ---
 article:
   - title: "Convergenza tra inflazione core e inflazione complessiva"
-    cover_image: ".jpg"
+    cover_image: "convergenza.jpg"
     slug: "convergenza-inflazione"
     date: "06 febbraio 2017"
     content: "<p>Nell'agosto 2016, <a href=\"http://blog.pimco.com/2016/08/17/inflation-on-track-2/\" target=\"_blank\">abbiamo affermato</a> che, sebbene l'inflazione complessiva fosse pari allo 0,8% su base annua, ovvero ben al di sotto dell'obiettivo a lungo termine della Fed, tale ritmo modesto era dovuto a fattori temporanei che con il tempo si sarebbero affievoliti. La flessione dei prezzi delle materie prime nei due anni precedenti e l'impatto ritardato dell'apprezzamento valutario esercitavano allora un effetto eccessivo sull'indice dei prezzi al consumo (IPC) complessivo. Tuttavia, alcune componenti sottostanti (tra cui l'inflazione degli immobili residenziali) pi&ugrave; sensibili ai fondamentali domestici e alla capacit&agrave; inutilizzata nel mercato del lavoro erano rimaste solide, rafforzando la nostra convinzione che l'inflazione complessiva sarebbe aumentata fino a convergere con l'inflazione core, che avrebbe a nostro avviso raggiunto il 2,2% circa.</p>
@@ -14,7 +14,7 @@ Siamo del parere che il mercato potrebbe sbagliarsi. Come abbiamo sottolineato i
     author:
       - author_name: "Tiffany Wilding"
         author_profile: "U.S. Economist"
-        author_photo: ".jpg"
+        author_photo: "tiffany_wilding.jpg"
   - title: "La strategia Income di PIMCO: posizionamento attivo in un contesto incerto e volatile"
     cover_image: "income.jpg"
     slug: "strategia-income"
