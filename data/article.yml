@@ -1,5 +1,26 @@
 ---
 article:
+  - title: "L'asset allocation di PIMCO per il 2017"
+    cover_image: "asset_allocation.jpg"
+    slug: "asset-allocation"
+    date: "20 febbraio 2017"
+    content: "<p>All'indomani delle elezioni presidenziali statunitensi, &egrave; difficile immaginare un contesto migliore per riesaminare l'approccio all'asset allocation, specialmente alla luce del crescente scetticismo incontrato dal libero scambio e dall'apertura dei confini, nonch&eacute; dei possibili cambiamenti dei paradigmi economici che hanno prevalso negli ultimi anni.</p>
+<p>Gli investitori nutrono chiaramente sentimenti contrastanti riguardo ai recenti sviluppi. L'euforia immediata per le ricadute della vittoria repubblicana negli Stati Uniti sui mercati azionari si &egrave; trasformata in un atteggiamento attendista, che ha visto le azioni consolidarsi e le obbligazioni recuperare gran parte della flessione iniziale.</p>
+<p>Ci preme sottolineare che il livello attuale delle valutazioni e lo stadio raggiunto dal ciclo economico, abbinati alla maggiore incertezza macroeconomica, si tradurranno in risultati sempre pi&ugrave; eterogenei tra le diverse classi di attivo e al loro interno. Un'analisi economica dettagliata e un'accurata selezione bottom-up dei titoli e dei settori dovranno quindi essere accompagnate da una rigorosa gestione del rischio e da un'attenta protezione dai ribassi. Nel 2017 saranno richieste pazienza e agilit&agrave;, ma alla luce dell'attuale contesto suggeriamo anche di riconsiderare il proprio approccio all'asset allocation.</p>
+<p><strong><a href=\"https://www.pimco.it/it-it/insights/economic-and-market-commentary/global-markets/asset-allocation-outlook/tails-and-transitions\" target=\"_blank\">Leggi le nostre prospettive di Asset Allocation per il 2017 per capire:</a></strong></p>
+<ul>
+<li>Come andare oltre l'investimento passivo nelle ultime fasi dell'espansione economica</li>
+<li>Dove PIMCO intravede rischi e opportunit&agrave; nelle classi di attivo globali</li>
+<li>Come difendersi dall&rsquo;inflazione</li>
+</ul>
+<p><strong><a href=\"https://www.pimco.it/it-it/insights/economic-and-market-commentary/global-markets/asset-allocation-outlook/tails-and-transitions\" target=\"_blank\">Leggi il documento completo per approfondire</a></strong></p>"
+    author:
+      - author_name: "Mihir P. Worah"
+        author_profile: "CIO Real Return and Asset Allocation"
+        author_photo: "mihir_worah.jpg"
+      - author_name: "Geraldine Sundstrom"
+        author_profile: "Managing director and portfolio manager"
+        author_photo: "geraldine_sundstrom.jpg"
   - title: "Una nuova fase nella guerra fredda delle valute"
     cover_image: "nuova_fase.jpg"
     slug: "nuova-fase"
